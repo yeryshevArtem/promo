@@ -1,5 +1,5 @@
 import { FC } from "react"
-import Spinner from "@/components/spinner/Spinner";
+import Spinner from "@/components/common/spinner/Spinner";
 
 interface loadingProps { }
 
