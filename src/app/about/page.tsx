@@ -21,10 +21,12 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
+import ListItemText from '@mui/material/ListItemText';
 
 // Social media
 import TwitterIcon from '@mui/icons-material/Twitter';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const itemData = [
@@ -50,17 +52,26 @@ const socialMedia = [
     {
         id: 1,
         component: TwitterIcon,
-        url: 'https://twitter.com/ArtemYeryshev'
+        url: 'https://twitter.com/ArtemYeryshev',
+        title: 'ArtemYeryshev'
     },
     {
         id: 2,
         component: GitHubIcon,
-        url: 'https://github.com/yeryshevArtem'
+        url: 'https://github.com/yeryshevArtem',
+        title: 'yeryshevArtem'
     },
     {
-        id: 2,
+        id: 3,
         component: LinkedInIcon,
-        url: 'https://www.linkedin.com/in/artem-yeryshev-336024122/'
+        url: 'https://www.linkedin.com/in/artem-yeryshev-336024122/',
+        title: 'artem-yeryshev-336024122'
+    },
+    {
+        id: 4,
+        component: AlternateEmailIcon,
+        url: "mailto:artem.yeryshev@gmail.com",
+        title: "artem.yeryshev@gmail.com"
     }
 
 ]
@@ -87,13 +98,15 @@ const page: FC<pageProps> = ({ }) => {
                                 {
                                     socialMedia.map((media) => {
                                         return (
-                                            <ListItem>
-                                                <ListItemAvatar>
-                                                    <Link href={media.url}>
+                                            <Link href={media.url}>
+                                                <ListItem>
+                                                    <ListItemAvatar>
                                                         <media.component />
-                                                    </Link>
-                                                </ListItemAvatar>
-                                            </ListItem>
+                                                    </ListItemAvatar>
+                                                    <ListItemText primary={media.title} />
+                                                </ListItem>
+                                            </Link>
+
                                         );
                                     })
                                 }
