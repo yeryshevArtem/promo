@@ -38,7 +38,7 @@ const page: FC<pageProps> = ({ }) => {
                 </Grid>
                 <Grid item xs={12} md={8}>
                     <Grid container spacing={2}>
-                        <Grid item xs={6}>
+                        <Grid item md={6} xs={12}>
                             <Card sx={{ maxWidth: 345 }}>
                                 <CardActionArea>
                                     <CardMedia
@@ -62,7 +62,7 @@ const page: FC<pageProps> = ({ }) => {
                                 </CardActionArea>
                             </Card>
                         </Grid>
-                        <Grid item xs={6}>
+                        <Grid item md={6} xs={12}>
                             <Card sx={{ maxWidth: 345 }}>
                                 <CardActionArea>
                                     <CardMedia
@@ -82,7 +82,7 @@ const page: FC<pageProps> = ({ }) => {
                                 </CardActionArea>
                             </Card>
                         </Grid>
-                        <Grid item xs={6}>
+                        <Grid item md={6} xs={12}>
                             <Card>
                                 <CardActionArea>
                                     <CardMedia
