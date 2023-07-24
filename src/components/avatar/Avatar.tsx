@@ -10,7 +10,7 @@ interface AvatarProps {}
 const Avatar: FC<AvatarProps> = ({}) => {
     return (
         <div className={styles.avatar}>
-            <Image src="/5.png" width={600} height={600} alt="Artem Yeryshev Photo" />
+            <Image src="/my-photo.png" width={600} height={600} alt="Artem Yeryshev Photo" />
         </div>
     );
 }

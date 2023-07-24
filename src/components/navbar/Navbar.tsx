@@ -72,7 +72,7 @@ const Navbar: FC<navbarProps> = ({ }) => {
                                 textDecoration: 'none',
                             }}
                         >
-                            LOGO
+                            AY
                         </Typography>
 
                         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -130,7 +130,7 @@ const Navbar: FC<navbarProps> = ({ }) => {
                                 textDecoration: 'none',
                             }}
                         >
-                            LOGO
+                            AY
                         </Typography>
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                             {links.map((link) => (
