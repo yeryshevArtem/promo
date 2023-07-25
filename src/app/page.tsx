@@ -24,10 +24,10 @@ const page: FC<pageProps> = ({ }) => {
                     <Grid container spacing={2}>
                         <Grid item xs={12} md={12}>
                             <Avatar />
-                            <Typography variant="h3" gutterBottom className="mt-10">
+                            <Typography variant="h3" gutterBottom className="mt-10 text-black">
                                 Artem Yeryshev
                             </Typography>
-                            <Typography variant="h6" gutterBottom>
+                            <Typography variant="h6" gutterBottom className="text-black">
                                 Make your UI incredible
                             </Typography>
                         </Grid>
@@ -48,10 +48,10 @@ const page: FC<pageProps> = ({ }) => {
                                         alt="JavaScript developer"
                                     />
                                     <CardContent>
-                                        <Typography gutterBottom variant="h5" component="div">
+                                        <Typography gutterBottom variant="h5" component="div" className="text-black">
                                             Senior Front-End Developer
                                         </Typography>
-                                        <Typography variant="body2" color="text.secondary">
+                                        <Typography variant="body2" className="text-black">
                                             Experienced Front-End Developer who contributes high quality scalable
                                             UX functionality and technical leadership for large scale SaaS applications.
                                             Skilled at creating complex features and integrations while working with multinational teams,
@@ -72,7 +72,7 @@ const page: FC<pageProps> = ({ }) => {
                                         alt="tech stack"
                                     />
                                     <CardContent>
-                                        <Typography gutterBottom variant="h5" component="div">
+                                        <Typography gutterBottom variant="h5" component="div" className="text-black">
                                             Tech stack
                                         </Typography>
                                         <Box sx={{ m: 2 }}>
@@ -92,7 +92,7 @@ const page: FC<pageProps> = ({ }) => {
                                         alt="my hobbies"
                                     />
                                     <CardContent style={{ paddingRight: 0 }}>
-                                        <Typography gutterBottom variant="h5" component="div">
+                                        <Typography gutterBottom variant="h5" component="div" className="text-black">
                                             My hobbies
                                         </Typography>
                                         <Hobbies />

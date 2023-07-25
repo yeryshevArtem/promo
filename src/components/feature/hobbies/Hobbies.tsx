@@ -37,6 +37,7 @@ const Hobbies: FC<HobbiesProps> = () => {
                         loading="lazy"
                     />
                     <ImageListItemBar
+                        className="text-black"
                         title={hobby.title}
                         position="below"
                     />

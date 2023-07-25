@@ -72,7 +72,7 @@ interface TechStackProps { }
 
 const TechStack: FC<TechStackProps> = ({ }) => {
     return (
-        <Stack direction="row" spacing={1} useFlexGap flexWrap="wrap">
+        <Stack direction="row" spacing={1} useFlexGap flexWrap="wrap" className="text-black">
             {
                 skills.map((skill) => {
                     return <Chip key={skill.id} label={skill.title} />

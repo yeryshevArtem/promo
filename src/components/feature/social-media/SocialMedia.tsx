@@ -49,7 +49,7 @@ const SocialMedia: FC<SocialMediaProps> = ({}) => {
         <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
             {socialMedia.map((media) => {
                 return (
-                    <Link href={media.url} key={media.id}>
+                    <Link href={media.url} key={media.id} className="text-black">
                         <ListItem>
                             <ListItemAvatar>
                                 <media.component />
